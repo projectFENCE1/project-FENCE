@@ -15,6 +15,9 @@
 <span>Password</span>
 <br></br>
 
+<button type="button" onclick="login()">Login</button>
+<button onclick="createAccount()">Create Account</button>
+
 <script>
 function getUsers() {
   return JSON.parse(localStorage.getItem("users")) || [];
@@ -66,13 +69,11 @@ function login() {
   localStorage.setItem("loggedIn", "true");
 
   alert("Login succceed");
-  
-<button type="button" onclick="login()">Login</button>
-<button onclick="createAccount()">Create Account</button>
 
   //Weiterleitung
   window.location.href= "fence.html";
 }
+</script>
 
 <script>
 function getUsers() {
@@ -111,7 +112,7 @@ function createAccount() {
 
   saveUsers(users);
 
-  alert("account created");
+  alert("acount created");
 }
 </script>
 </form>
