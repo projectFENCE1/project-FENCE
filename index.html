@@ -14,12 +14,13 @@
 <input id="password" placeholder="please type in...">
 <span>Password</span>
 <br></br>
-
+  
+<script>
+  
 <button>Login</button>
 <button>Create Account</button>
 
-<script>
-function getUsers() {
+  function getUsers() {
   return JSON.parse(localStorage.getItem("users")) || [];
 }
 
@@ -74,6 +75,7 @@ function login() {
   window.location.href= "fence.html";
 }
 </script>
+
 
 <script>
 function getUsers() {
